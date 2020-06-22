@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -20,6 +21,7 @@ import com.jasjotsingh.tindermotionlayout.scenes.TinderScene9Activity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button button1,button2,button3,button4,button5,button6,button7,button8,button9,button10;
+    public static final String TAG = MainActivity.class.getSimpleName();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.scene_2:
                 Intent intent2 = new Intent(MainActivity.this, TinderScene2Activity.class);
+                Log.d(TAG, "onClick: ");
                 startActivity(intent2);
                 break;
             case R.id.scene_3:
