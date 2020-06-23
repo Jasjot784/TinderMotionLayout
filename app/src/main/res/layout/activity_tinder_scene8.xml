@@ -16,6 +16,7 @@
         android:outlineSpotShadowColor="@android:color/transparent"
         app:cardBackgroundColor="@color/design_default_color_secondary"
         app:cardCornerRadius="24dp"
+        android:theme="@style/Theme.MaterialComponents.Light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
